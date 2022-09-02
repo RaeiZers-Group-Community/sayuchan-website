@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta data-n-head='ssr' charset="utf-8">
+    <meta data-n-head='ssr' name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Head Information -->
+    <title>Sayuchan - Commands</title>
+    <link data-n-head='ssr' rel='icon' type='image/x-icon' href='assets/logo.png'>
+
+    <!-- Styles -->
+    <link type='text/css' rel='stylesheet' href='styles/utilities.css'>
+    <link type='text/css' rel='stylesheet' href='styles/common.css'>
+    <link type='text/css' rel='stylesheet' href='styles/commands.css'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous">
+
+    <!-- Meta -->
+    <meta data-n-head='ssr' data-hid='theme-color' name='theme-color' content='#8f45d9'>
+    <meta data-n-head='ssr' data-hid='og:type' name='og:type' content='website'>
+    <meta data-n-head='ssr' data-hid='og:title' name='og:title' content='Sayuchan - Commands'>
+    <meta data-n-head='ssr' data-hid='og:url' name='og:url' content='http://sayuchan.ezyro.com/commands.html'>
+    <meta data-n-head='ssr' data-hid='og:image' name='og:image'
+        content='http://sayuchan.ezyro.com/assets/logo.png'>
+    <meta data-n-head='ssr' data-hid='description' name='description'
+        content='View all the Sayuchan commands in one place. Except for the bot it self this is the most up to date list you can find!'>
+    <meta data-n-head='ssr' data-hid='og:description' name='og:description'
+        content='Sayuchan is a multi-purpose discord bot. Built with love and entertainment in mind to keep your discord members busy and active. But it does not stop there...'>
+
+</head>
+
+<body style='background-color: #292a2e'>
+    <!-- Preloader -->
+
+    <body class='preload'></body>
+
+    <!-- Header -->
+    <div class='navbar'>
+        <div class='container full flex'>
+            <a href='/' class='logo flex'>
+                <img src='assets//logo.png' alt='Sayuchan Logo'>
+                <p class='title'>Sayuchan</p>
+            </a>
+            <nav>
+                <ul>
+                    <li><a class='button currentPage' href='./commands.html'><span>Commands</span></a></li>
+                    <li><a class='button' href='./docs.html'><span>Information</span></a></li>
+                    <li><a class='button' href='./donation.html' target="_blank"><span>Donation</span></a></li>
+                    <li><a class='button' href='./invite.html'><span>Invite Sayuchan</span></a></li>
+                    <li><a class='button' href='./support.html'><span>Support</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Notes -->
+    <div class='notes card'>
+        <div class='container full grid'>
+            <div class='commandPrefix'>
+                <h2>COMMAND PREFIX</h2>
+                <div class='flex'>
+                    <p>The default prefix is </p>
+                    <pre><code> s! </code></pre>
+                </div>
+                <div class='flex'>
+                    <p>Command Example: </p>
+                    <pre><code>s!help</code></pre>
+                </div>
+            </div>
+            <div class='commandSyntax'>
+                <h2>COMMAND SYNTAX</h2>
+                <p><i>(Please do not include these when typing commands)</i></p>
+
+                <div class='flex'>
+                    <pre><code> [] </code></pre>
+                    <p>- Optional paramater</p>
+                </div>
+                <div class='flex'>
+                    <pre><code> <> </code></pre>
+                    <p>- Required parameter</p>
+                </div>
+                <div class='flex pop'>
+                    <pre><code> < thing1 || thing2 > </code></pre>
+                    <p>- Select an option inside</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Commands -->
+    <div class='category flex'>
+        <div class='container full accordion'>
+            <div class='card commands'>
+                <div id='musicContainer'>
+                    <!-- <input type='checkbox' id='music' class='accordion_input'> -->
+                    <center>
+                    <label for="stylesheet"><h2>All Commands</h2></label>
+                    </center>
+                    <!-- <div class='content accordion'> -->
+                        <div class='card'>
+                            <input type='checkbox' id='filters' class='accordion_input'>
+                            <label for='filters' class='accordion_label'>Filters</label>
+                            <div class='content'>
+                                <p>Add a filter your queue of songs.</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>filter [ filter ]</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Example: </h4>
+                                    <pre><code>filter bassboost</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Aliases: </h4>
+                                    <pre><code>filters</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='now-playing' class='accordion_input'>
+                            <label for='now-playing' class='accordion_label'>Now Playing</label>
+                            <div class='content'>
+                                <p>Get information about the currently playing song.</p>
+                                <div class='flex usage'>
+                                    <h4>Aliases: </h4>
+                                    <pre><code>np</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='now-playing' class='accordion_input'>
+                            <label for='now-playing' class='accordion_label'>Help</label>
+                            <div class='content'>
+                                <p>Get information Commands Prefix</p>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='static' class='accordion_input'>
+                            <label for='static' class='accordion_label'>Statistics</label>
+                            <div class='content'>
+                                <p>Get information Bot Static.</p>
+                                <div class='flex usage'>
+                                    <h4>Aliases: </h4>
+                                    <pre><code>static</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='ping' class='accordion_input'>
+                            <label for='ping' class='accordion_label'>Ping</label>
+                            <div class='content'>
+                                <p>Get information Latency Pinging.</p>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='volume' class='accordion_input'>
+                            <label for='volume' class='accordion_label'>Volume</label>
+                            <div class='content'>
+                                <p>Volume Control Up And Down.</p>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='stop' class='accordion_input'>
+                            <label for='stop' class='accordion_label'>Stop</label>
+                            <div class='content'>
+                                <p>Stop the queue and leave the voice channel.</p>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='resume' class='accordion_input'>
+                            <label for='resume' class='accordion_label'>Resume</label>
+                            <div class='content'>
+                                <p>Resume a paused track.</p>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='pause' class='accordion_input'>
+                            <label for='pause' class='accordion_label'>Pause</label>
+                            <div class='content'>
+                                <p>Pause the current track.</p>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='play' class='accordion_input'>
+                            <label for='play' class='accordion_label'>Play</label>
+                            <div class='content'>
+                                <p>Play a song via a link or name. Currently supporting: YouTube, Spotify,
+                                    and Discord MP3's</p>
+                                <div class='flex usage'>
+                                    <h4>Usage: </h4>
+                                    <pre><code>play < song url || name ></code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Example: </h4>
+                                    <pre><code>play Martin Garrix Animals</code></pre>
+                                </div>
+                                <div class='flex usage'>
+                                    <h4>Aliases: </h4>
+                                    <pre><code>p</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='skip' class='accordion_input'>
+                            <label for='skip' class='accordion_label'>Skip</label>
+                            <div class='content'>
+                                <p>Skip the rest of the current song.</p>
+                                <div class='flex usage'>
+                                    <h4>Aliases: </h4>
+                                    <pre><code>st</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='loop' class='accordion_input'>
+                            <label for='loop' class='accordion_label'>Loop</label>
+                            <div class='content'>
+                                <p>Loop the queue.</p>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='queue' class='accordion_input'>
+                            <label for='queue' class='accordion_label'>Queue</label>
+                            <div class='content'>
+                                <p>Check the current song and the next 10 playing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class='footer'>
+        <div class='container full grid'>
+            <div class='branding'>
+                <h4>Sayuchan</h4>
+                <p>Copyright &copy; 2021-2022 Sayuchan</p>
+            </div>
+            <div class='flex'>
+                <div class='footernav'>
+                    <ul>
+                        <li><a class='button' href='/'><span>Home</span></a></li>
+                        <li><a class='button' href='commands.html'><span>Commands</span></a></li>
+                        <li><a class='button' href='docs.html'><span>Information</span></a></li>
+                    </ul>
+                </div>
+                <div class='footernav'>
+                    <ul>
+                        <li><a class='button' href='donation.html'><span>Donation</span></a></li>
+                        <li><a class='button' href='support.html'><span>Support Server</span></a></li>
+                        <li><a class='button' href='invite.html'><span>Invite Sayuchan</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script>$(window).load(function () { 'body'.removeClass('.preload'); });</script>
+</body>
+
+</html>
